@@ -16,9 +16,9 @@ public class DemoWeight {
 	sc.close();
 	
 	//to convert the weight on Earth to Mars
-	Converter weightConverter = new Converter();
-	int weightInInt = ((int)(weightConverter.getWeightOnMars(person1.getWeightOnEarth()*100))+5);//simple decimal point converter
-	person1.setWeightOnMars((double)weightInInt/100);// set the value to human attribute
+	Converter weightConverter = new Converter();//create object
+	int weightInInt = ((int)(weightConverter.getWeightOnMars(person1.getWeightOnEarth()*100))+5);
+	person1.setWeightOnMars((double)weightInInt/100);
 	
 	//display the weight on earth and weight on mars
 	System.out.println("\nThe weight on Earth (kg) : "+person1.getWeightOnEarth());
